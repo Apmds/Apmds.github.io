@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <title>Login</title>
+    <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    
 </head>
 <body>
+    <table>
+        <tr>
+            <td>
+                <div class="navbar">
+                <p id="login-welcome">Royal-Taylor</p>
+                <img src="RT-Logo-removebg-preview.png" class="logo">
+                </div>
+            </td>
+            <td>
+                <h1>Faça o login para começar a encomendar peças!</h1>
+                <form action="login.html" method="post" class="login">
+                    <label>Email: </label>
+                    <div>
+                        <input id="email" name="email" type="email" placeholder=" Insira o seu email">
+                    </div>
+                    <br>
+                    <label>Palavra-passe: </label>
+                    <div>
+                        <input id="password" name="password" type="password" placeholder=" Insira a sua palavra-passe" maxlength="10" minlength="2">
+                    </div>
+                    <br>
+                    <div class="remember-forgot">
+                        <p>Esqueceu-se da palavra-passe?<a href="#"> Clique aqui</a></p>
+                    </div>
+                    <div>
+                        <p>Não possui conta?<a href="#"> Crie uma</a></p>
+                    </div>
+                    <button type="submit" id="submit" class="button" onclick="return check_login()">Login</button>
+                </form>
+                <p id="error_msg" style="display: none;">Email ou password erradas!</p>
+            </td>
+        </tr>
+    </table>
+    	
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.min.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
