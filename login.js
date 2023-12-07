@@ -38,7 +38,8 @@ function check_login() {
         console.log(password)
         console.log(right_password)
         if (password == right_password) {
-            return true
+            localStorage.setItem("conta_login", JSON.stringify({email: user_logins[email]}))
+            document.location.href = newUrl
         } else {
             error_msg.style.display = ""
         return false
