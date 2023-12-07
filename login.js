@@ -38,8 +38,7 @@ function check_login() {
         console.log(password)
         console.log(right_password)
         if (password == right_password) {
-            localStorage.setItem("conta_login", JSON.stringify({email: user_logins[email]}))
-            document.location.href = newUrl
+            return true
         } else {
             error_msg.style.display = ""
         return false
@@ -50,7 +49,17 @@ function check_login() {
     } 
 }
 
+document.getElementById('login_form').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevents the default form submission
 
+    // Your form handling logic goes here
+    email = document.getElementById("email").value.trim()
+    localStorage.setItem("conta_login", JSON.stringify({[email]: user_logins[email]}))
+    window.location.href = "main_page.html"
+
+    // Example: Change the page to "newpage.html"
+    window.location.href = 'main_page.html';
+});
 
 /*
 // ViewModel KnockOut
