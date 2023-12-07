@@ -18,7 +18,7 @@ main {
 }
 
 .navbar {
-    transform: translateX(-82%);
+    transform: translateX(-60%);
     width: 460px; /* Defina a largura desejada */
     height: 100vh; /* 100% da altura da viewport */
     background-color: #261211;
@@ -103,4 +103,9 @@ button{
 
 button:hover{
     background-color: black;
+}
+
+#login-welcome {
+    text-align: center;
+    margin: 0 auto;
 }
