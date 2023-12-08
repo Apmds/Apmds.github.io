@@ -3,47 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
     <title>Login</title>
-    <link href="index.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     
 </head>
 <body>
-    <table>
-        <tr>
-            <td>
-                <div class="navbar">
-                <p id="login-welcome">Royal-Taylor</p>
-                <img src="logo.png" class="logo">
-                </div>
-            </td>
-            <td>
-                <h1>Faça o login para começar a encomendar peças!</h1>
+    <div class="row min-vh-100">
+        <div class="col-3 d-flex align-items-center side-banner">
+            <div class="container text-center justify-content-center">
+                <p id="login-welcome" class="fs-1 text-white">Royal-Taylor</p>
+                <img src="logo.png" class="img-fluid logo">
+            </div>
+        </div>
+            
+        <div class="col-9 d-flex align-items-center main-content">
+            <div class="container text-center justify-content-center">
+                <p id="login-welcome" class="fs-3 text-white fw-bold">Faça o login para começar a encomendar peças!</p>
                 <form action="" id="login_form" method="post" class="login">
-                    <label>Email: </label>
-                    <div>
-                        <input id="email" name="email" type="email" placeholder=" Insira o seu email">
+
+                    <div class="form-group col-4 container text-center">
+                        <label for="email" class="text-white form-label">Email:</label>
+                        <input class="form-control" id="email" name="email" type="email" placeholder="Insira o seu email">
                     </div>
-                    <br>
-                    <label>Palavra-passe: </label>
-                    <div>
-                        <input id="password" name="password" type="password" placeholder=" Insira a sua palavra-passe" maxlength="10" minlength="2">
-                    </div>
-                    <br>
-                    <div class="remember-forgot">
-                        <p>Esqueceu-se da palavra-passe?<a href="#"> Clique aqui</a></p>
-                    </div>
-                    <div>
-                        <p>Não possui conta?<a href="#"> Crie uma</a></p>
-                    </div>
-                    <button type="submit" id="submit" class="button" onclick="return check_login()">Login</button>
+                    
+                    <div class="form-group col-4 container text-center mt-3">
+                        <label for="password" class="text-white form-label">Palavra-passe:</label>
+                        <input class="form-control" id="password" name="password" type="password" placeholder="Insira a sua palavra-passe" maxlength="10" minlength="2">
+                </div>
+
+                    <p class="text-white mt-3">Esqueceu-se da palavra-passe? <a href="#">Clique aqui</a></p>
+                    <p class="text-white">Não possui conta? <a href="#"> Crie uma</a></p>
+                    
+                    <button type="submit" id="submit" class="btn btn-light" onclick="return check_login()">Login</button>
                 </form>
-                <p id="error_msg" style="display: none;">Email ou password erradas!</p>
-            </td>
-        </tr>
-    </table>
-    	
+
+                <p id="error_msg" class="text-white mt-3 d-none">Email ou password erradas!</p>
+            </div>
+        </div>
+    </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.min.js"></script>

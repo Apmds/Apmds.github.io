@@ -1,0 +1,19 @@
+body {
+    overflow: hidden;
+}
+
+.side-banner {
+    background-color: #261211;
+}
+
+.side-banner-link {
+    height: 6%;
+}
+
+.side-banner-link:hover {
+    background-color: #5b2a28;
+}
+
+.main-content {
+    background-color: #52140e;
+}
