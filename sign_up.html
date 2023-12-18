@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link href="styles.css" rel="stylesheet">
+    <title>Registo</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -18,26 +18,29 @@
                 <img src="logo.png" class="img-fluid logo">
             </div>
         </div>
-            
+        
         <div class="col-9 d-flex align-items-center main-content">
             <div class="container text-center justify-content-center">
-                <p id="login-welcome" class="fs-3 text-white fw-bold">Faça o login para começar a encomendar peças!</p>
-                <form action="" id="login_form" method="post" class="login">
-
+                <p id="login-welcome" class="fs-3 text-white fw-bold">Registe-se para comprar peças únicas! </p>
+                <form action="" id="sign_up_form" method="post" class="login">
                     <div class="form-group col-4 container text-center">
+                        <label for="name" class="text-white form-label">Nome completo:</label>
+                        <input class="form-control" id="name" name="name" type="text" placeholder="Nome completo...">
+                    </div>
+
+                    <div class="form-group col-4 container text-center mt-3">
                         <label for="email" class="text-white form-label">Email:</label>
-                        <input class="form-control" id="email" name="email" type="email" placeholder="Insira o seu email">
+                        <input class="form-control" id="email" name="email" type="email" placeholder="O seu email...">
                     </div>
                     
                     <div class="form-group col-4 container text-center mt-3">
                         <label for="password" class="text-white form-label">Palavra-passe:</label>
-                        <input class="form-control" id="password" name="password" type="password" placeholder="Insira a sua palavra-passe" maxlength="10" minlength="2">
+                        <input class="form-control" id="password" name="password" type="password" placeholder="A sua palavra-passe..." maxlength="10" minlength="2">
                 </div>
 
-                    <p class="text-white mt-3">Esqueceu-se da palavra-passe? <a href="#">Clique aqui</a></p>
-                    <p class="text-white">Não possui conta? <a href="sign_up.html"> Crie uma</a></p>
+                    <p class="text-white mt-3">Já possui conta? <a href="index.html">Clique aqui</a></p>
                     
-                    <button type="submit" id="submit" class="btn btn-light" onclick="return check_login()">Login</button>
+                    <button type="submit" id="submit" class="btn btn-light" onclick="return sign_up()">Registo</button>
                 </form>
 
                 <p id="error_msg" class="text-white mt-3 d-none">Email ou password erradas!</p>
@@ -47,6 +50,6 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.min.js"></script>
-    <script src="login.js"></script>
+    <script src="sign_up.js"></script>
 </body>
 </html>
