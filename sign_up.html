@@ -20,9 +20,9 @@
         </div>
         
         <div class="col-9 d-flex align-items-center main-content">
-            <div class="container text-center justify-content-center">
+            <div id="page1" class="container text-center justify-content-center">            
                 <p id="login-welcome" class="fs-3 text-white fw-bold">Registe-se para comprar peças únicas! </p>
-                <form action="" id="sign_up_form" method="post" class="login">
+                <form action="" id="sign_up_form1" method="post" class="login">
                     <div class="form-group col-4 container text-center">
                         <label for="name" class="text-white form-label">Nome completo:</label>
                         <input class="form-control" id="name" name="name" type="text" placeholder="Nome completo...">
@@ -35,15 +35,52 @@
                     
                     <div class="form-group col-4 container text-center mt-3">
                         <label for="password" class="text-white form-label">Palavra-passe:</label>
-                        <input class="form-control" id="password" name="password" type="password" placeholder="A sua palavra-passe..." maxlength="10" minlength="2">
+                        <input class="form-control" id="password" name="password" type="password" placeholder="A sua palavra-passe..." minlength="2">
                 </div>
 
                     <p class="text-white mt-3">Já possui conta? <a href="index.html">Clique aqui</a></p>
                     
-                    <button type="submit" id="submit" class="btn btn-light" onclick="return sign_up()">Registo</button>
+                    <button type="submit" id="submit1" class="btn btn-light" onclick="second_page()">Registo</button>
+                </form>
+            </div>
+
+            <div id="page2" class="d-none container text-center justify-content-center">            
+                <p id="login-welcome" class="fs-3 text-white fw-bold">Só mais algumas informações... </p>
+                <form action="" id="sign_up_form2" method="post" class="login">
+                    <div class="row">
+                        <div class="form-group col-4 container text-center mt-3">
+                            <label for="birthdate" class="text-white form-label">Data de nascimento:</label>
+                            <input class="form-control" id="birthdate" name="birthdate" type="date" placeholder="Data de nascimento...">
+                        </div>
+
+                        <div class="form-group col-4 container text-center mt-3">
+                            <label for="postcode" class="text-white form-label">Código postal:</label>
+                            <input class="form-control" id="postcode" name="postcode" type="text" pattern="^\d{4}\s*-\s*\d{3}$" placeholder="O seu código postal...">
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="row">
+                        <div class="form-group col-4 container text-center mt-3">
+                            <label for="district" class="text-white form-label">Distrito:</label>
+                            <input class="form-control" id="district" name="district" type="text" placeholder="O distrito onde vive...">
+                        </div>
+
+                        <div class="form-group col-4 container text-center mt-3">
+                            <label for="city" class="text-white form-label">Concelho:</label>
+                            <input class="form-control" id="city" name="city" type="text" placeholder="O concelho onde vive...">
+                        </div>
+                    </div>
+                        
+
+                    <p class="text-white mt-3">Já possui conta? <a href="index.html">Clique aqui</a></p>
+                    
+                    <button type="button" id="back_btn" class="btn btn-light" onclick="return first_page()">Voltar</button>
+                    <button type="reset" id="reset-btn" class="btn btn-light">Limpar</button>
+                    <button type="submit" id="submit2" class="btn btn-light" onclick="return sign_up()">Registo</button>
                 </form>
 
-                <p id="error_msg" class="text-white mt-3 d-none">Email ou password erradas!</p>
+                <p id="error_msg" class="text-white mt-3 d-none">Existem campos não preenchidos!</p>
             </div>
         </div>
     </div>
