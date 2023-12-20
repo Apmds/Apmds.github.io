@@ -10,10 +10,132 @@ body {
     height: 6%;
 }
 
+.chat-banner {
+    background-color: #7E5F5F;
+    position: fixed;
+    width: 15%;
+    top:0%;
+    right: 0%;
+    z-index: 1000;
+}
+
 .side-banner-link:hover {
     background-color: #5b2a28;
 }
 
 .main-content {
     background-color: #52140e;
+    margin: 0;
+}
+
+
+#table-title {
+    color: white;
+}
+
+
+.hex {
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 220px;
+    background-color: #424242;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.shade {
+    margin:20px;
+    border-radius: 20px;
+    background-color: #845f5f;
+    color: white;
+}
+
+#edit-profile {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    border-radius: 15px;
+    align-items: center;
+    background-color: #52140e;
+    color: white;
+    box-shadow: 0 14px 16px rgba(0, 0, 0, 0.1);
+}
+
+.face {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+#banner {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.img-produto {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.artesao-face {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+#chat_toggle_btn {
+    position: fixed;
+    max-width: 60px;
+    bottom: 20px;
+    right: 1%;
+    z-index: 1000;
+}
+
+.table-header {
+    background: transparent;
+    color: white;
+    display: flex;
+}
+
+.chat-input {
+    position: fixed;
+    bottom: 0%;
+    right: 4%;
+}
+
+.chat-send-btn {
+    position: fixed;
+    width: 4%;
+    bottom: 0%;
+    right: 0%;
+}
+
+.chat-bubble {
+    background-color: #a38b8b;
+    width: 75%;
+    min-height: 5%;
+    border-radius: 5px
+}
+
+.artesao-casa {
+    width: 300px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 70px;
+}
+
+#artesao-ref {
+    text-decoration: none;
+    color: #a38b8b;
+    width: 100px;
+    height: 100px;
 }

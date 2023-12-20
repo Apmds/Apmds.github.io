@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal-Taylor</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+
+<body>
+    <div class="row min-vh-100">
+        <div class="col-3 text-center side-banner px-0">
+
+            <div class="container col-6">
+                <p class="fs-6 text-white mt-4 pb-3 border-bottom">Royal-Taylor</p>
+            </div>
+            <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white"
+                href="conta.html">
+                <span><i class="fa fa-user text-white" aria-hidden="true"></i> Conta</span>
+            </a>
+
+            <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white"
+                href="main_page.html">
+                <span><i class="fa fa-home text-white" aria-hidden="true"></i> Casa</span>
+            </a>
+
+            <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white"
+                href="favoritos.html">
+                <span><i class="fa fa-star-o text-white" aria-hidden="true"></i> Favoritos</span>
+            </a>
+
+            <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white"
+                href="encomendas.html">
+                <span><i class="fa fa-archive text-white" aria-hidden="true"></i> Encomendas</span>
+            </a>
+        </div>
+
+        <div class="col-9 main-content container p-5">
+            <div class="row">
+                <div class="col-12 shade mx-0 px-0 row">
+                    <div class="col-3">
+                        <img src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-541.jpg?size=338&ext=jpg&ga=GA1.1.1546980028.1702944000&semt=ais" class="hex" alt="Logo">
+                    </div>
+                    <div class="col-6 mt-4">
+                        <h2>A sua conta:</h2>
+                        <div>
+                            <h4 id="nome"></h4>
+                        </div>
+                        <div id="email"></div>
+                    </div>
+                    <div class="col-3 d-flex align-items-center ">
+                        <button type="button" class="btn btn-outline-info    "
+                            id="edit-profile">Editar Perfil</button>
+                    </div>
+                </div>
+                <div class="col-12 shade mx-0 px-0 row">
+                    <div class="col-8 row align-items-center">
+                        <h2>As suas medidas</h2>
+                        <hr>
+                        <div class="col-6">
+                            <h3>Medidas</h3>
+                        </div>
+                        <div class="col-6">
+                            <div id="cintura"></div>
+                            <div id="peito"></div>
+                            <div id="pescoco"></div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <h2>Dados Pessoais</h2>
+                        <hr>
+                        <div id="data_nascimento"></div>
+                        <div id="morada"></div>
+                    </div>
+                </div>
+                <div class="col-12 shade mx-0 px-0 row">
+                    <div class="col-3">
+                        <button type="button  " class="btn btn-outline-info d-flex align-items-center"
+                            id="edit-profile">Junta-te como artesão</button>
+                    </div>
+                    <div class="col-9">
+                        <p>Se tem um negócio de peças costumizadas, junte-se como artesão e venha expandir o seu negócio com a Royal-Taylor.</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-info" id="edit-profile" onclick="window.location.href='index.html'">Terminar sessão</button>
+        </div>
+
+        <script src="conta.js"></script>
+</body>
+
+</html>

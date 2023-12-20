@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,39 +10,97 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 </head>
+
 <body>
     <div class="row min-vh-100">
         <div class="col-3 text-center side-banner px-0">
-            
+
             <div class="container col-6">
                 <p class="fs-6 text-white mt-4 pb-3 border-bottom">Royal-Taylor</p>
             </div>
-                <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white" href="#">
-                    <span><i class="fa fa-user text-white" aria-hidden="true"></i> Conta</span>
-                </a>
-                
-                <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white" href="#">
-                    <span><i class="fa fa-home text-white" aria-hidden="true"></i> Casa</span>
-                </a>
+            <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white"
+                href="conta.html">
+                <span><i class="fa fa-user text-white" aria-hidden="true"></i> Conta</span>
+            </a>
 
-                <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white" href="#">
-                    <span><i class="fa fa-black-tie text-white" aria-hidden="true"></i> Artesãos</span>
-                </a>
+            <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white"
+                href="main_page.html">
+                <span><i class="fa fa-home text-white" aria-hidden="true"></i> Casa</span>
+            </a>
 
-                <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white" href="#">
-                    <span><i class="fa fa-star-o text-white" aria-hidden="true"></i> Favoritos</span>
-                </a>
+            <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white"
+                href="favoritos.html">
+                <span><i class="fa fa-star-o text-white" aria-hidden="true"></i> Favoritos</span>
+            </a>
 
-                <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white" href="#">
-                    <span><i class="fa fa-archive text-white" aria-hidden="true"></i> Encomendas</span>
-                </a>
+            <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white"
+                href="encomendas.html">
+                <span><i class="fa fa-archive text-white" aria-hidden="true"></i> Encomendas</span>
+            </a>
         </div>
 
-        <div class="col-9 d-flex align-items-center main-content">
-            <!--Conteúdo principal vai aqui-->
-        </div>
-    </div>  
+        <div class="col-9 main-content px-0">
+            <!--Banner-->
+            <div class="col-md-8">
+                <div id="banner" class="container mb-3 me-5 mt-3 p-lg-3">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="p-4 bg-white text-center">
+                            <p class="fw-bold">Banner Aqui</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 id="table-title" class="p-4">Página principal</h1>
+            <table class="container">
+                <tr>
+                    <td> 
+                        <a href="detalhes_artesão_1.html"><img
+                                src="https://t4.ftcdn.net/jpg/02/04/02/65/360_F_204026582_rTFcseUqDfqQAfYUY9w12xzMNC4c1bNi.jpg"
+                                class="artesao-casa"><a>
+                        <p class="text-white fs-3 mb-0">António Fonseca Martins</p>
+                        <p class="text-white fs-6 mt-0">Mafra, Lisboa</p>
+                    </td>
+                    <td>
+                        <div class="container align-items-center justify-content-center">
+                            <a href="detalhes_artesao.html"><img src="images/face-1.jpg" class="artesao-casa"><a>
+                            <p class="text-white fs-3 mb-0">Bárbara Abreu</p>
+                            <p class="text-white fs-6 mt-0">Maia, Porto</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="detalhes_artesao3.html"><img
+                                src="https://cdn.create.vista.com/api/media/small/194623104/stock-photo-senior-tailor-measuring-jacket-sleeve-tape-measure-sewing-workshop"
+                                class="artesao-casa"><a>
+                        <p class="text-white fs-3 mb-0">Manuel Fernandes Silva</p>
+                        <p class="text-white fs-6 mt-0">Gondomar, Porto</p>
+                    </td>
+                </tr>
+            </table>
 
+
+            <div class="container ">
+
+            </div>
+
+            <!-- Chat -->
+            <button id="chat_toggle_btn" type="button" class="btn btn-primary" onclick="toggle_chat()">Chat</button>
+            <div id="chat-banner" class="d-none chat-banner min-vh-100 px-0">
+                <div data-bind="foreach: messages" style="height: 95vh;">
+                    <div class="chat-bubble mb-3"
+                        data-bind="text: message, style: {float: $parent.user_here == user ? 'left' : 'right'}"></div>
+                </div>
+                <input type="text" id="chat-input" class="form-control chat-input" placeholder="message..."
+                    style="width: 11%;" />
+                <button type="button" class="btn btn-primary chat-send-btn" onclick="send_message()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="knockout-3.5.1.js"></script>
+    <script src="chat.js"></script>
     <script src="main_page.js"></script>
 </body>
+
 </html>

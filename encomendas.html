@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal-Taylor</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+</head>
+
+<body>
+    <div class="row min-vh-100">
+        <div class="col-3 text-center side-banner px-0">
+
+            <div class="container col-6">
+                <p class="fs-6 text-white mt-4 pb-3 border-bottom">Royal-Taylor</p>
+            </div>
+            <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white"
+                href="conta.html">
+                <span><i class="fa fa-user text-white" aria-hidden="true"></i> Conta</span>
+            </a>
+
+            <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white"
+                href="main_page.html">
+                <span><i class="fa fa-home text-white" aria-hidden="true"></i> Casa</span>
+            </a>
+
+            <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white"
+                href="favoritos.html">
+                <span><i class="fa fa-star-o text-white" aria-hidden="true"></i> Favoritos</span>
+            </a>
+
+            <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white"
+                href="encomendas.html">
+                <span><i class="fa fa-archive text-white" aria-hidden="true"></i> Encomendas</span>
+            </a>
+        </div>
+
+        <div class="col-9 main-content p-4">
+            <h1 id="table-title" class="p-4">As minhas encomendas</h1>
+            <table class="table text-center">
+                <thead class="table-secondary">
+                  <tr class="bg-danger">
+                    <th scope="col">Número</th>
+                    <th scope="col">Artesão</th>
+                    <th scope="col">Preço</th>
+                    <th scope="col">Pagamento</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Entrega prevista</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td><img src="https://img.freepik.com/free-photo/woman-tailor-working-sewing-factory_1303-15838.jpg?w=2000&t=st=1702999858~exp=1703000458~hmac=3fe27647b674ca5e8538be9dfed9088cc4e52d0251b58ebae23977daedecbeb8" class="artesao-face"></td>
+                    <td>80€</td>
+                    <td>Efetuado</td>
+                    <td>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <p class="text-warning">⏺</p>
+                        <p> Em produção</p>
+                      </div>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td><img src="https://www.epos.com.sg/wp-content/uploads/2022/05/Tailor-Singapore-Cover-Image-Opt.jpg" class="artesao-face"></td>
+                    <td>45€</td>
+                    <td>Efetuado</td>
+                    <td>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <p class="text-warning">⏺</p>
+                        <p> Em produção</p>
+                      </div>
+                    </td>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td><img src="https://t4.ftcdn.net/jpg/01/11/68/83/360_F_111688393_anL75k1H4hRcoazfDP9KjcK4P1uBpcgF.jpg" class="artesao-face"></td>
+                    <td>240€</td>
+                    <td>Efetuado</td>
+                    <td>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <p class="text-success">⏺</p>
+                        <p> Concluído</p>
+                      </div>
+                    </td>
+                    <td>07/12/2023</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td><img src="https://images.prismic.io/profilephotos/15306430-5a6d-4436-80eb-dcf42533233d_wellington-new-zealand-profile-photos-portrait-photographer-models-headshots-dashing.jpg?ixlib=vue-2.9.0&auto=format%2C%20compress" class="artesao-face"></td>
+                    <td>100€</td>
+                    <td>Efetuado</td>
+                    <td>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <p class="text-success">⏺</p>
+                        <p> Concluído</p>
+                      </div>
+                    </td>
+                    <td>21/12/2023</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td><img src="https://previews.123rf.com/images/ferli/ferli1806/ferli180600638/103094814-woman-tailor-working.jpg" class="artesao-face"></td>
+                    <td>10€</td>
+                    <td>Efetuado</td>
+                    <td>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <p class="text-warning">⏺</p>
+                        <p> Em produção</p>
+                      </div>
+                    </td>
+                    <td>N/A</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+            
+              <!-- Chat -->
+            <button id="chat_toggle_btn" type="button" class="btn btn-primary" onclick="toggle_chat()">Chat</button>
+            <div id="chat-banner" class="d-none chat-banner min-vh-100 px-0">
+                <div data-bind="foreach: messages" style="height: 95vh;">
+                    <div class="chat-bubble mb-3" data-bind="text: message, style: {float: $parent.user_here == user ? 'left' : 'right'}"></div>
+                </div>
+                <input type="text" id="chat-input" class="form-control chat-input" placeholder="message..." style="width: 11%;"/>
+                <button type="button" class="btn btn-primary chat-send-btn" onclick="send_message()">Send</button>
+            </div>
+            </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="knockout-3.5.1.js"></script>
+    <script src="chat.js"></script>
+</body>
+
+</html>

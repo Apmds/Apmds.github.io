@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Royal-Taylor</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+</head>
+
+<body>
+  <div class="row min-vh-100">
+    <div class="col-3 text-center side-banner px-0 align-itens-">
+      <div class="container col-6">
+        <p class="fs-6 text-white mt-4 pb-3 border-bottom">Royal-Taylor</p>
+    </div>
+    <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white"
+        href="conta.html">
+        <span><i class="fa fa-user text-white" aria-hidden="true"></i> Conta</span>
+    </a>
+
+    <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white"
+        href="main_page.html">
+        <span><i class="fa fa-home text-white" aria-hidden="true"></i> Casa</span>
+    </a>
+
+    <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white"
+        href="favoritos.html">
+        <span><i class="fa fa-star-o text-white" aria-hidden="true"></i> Favoritos</span>
+    </a>
+
+    <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white"
+        href="encomendas.html">
+        <span><i class="fa fa-archive text-white" aria-hidden="true"></i> Encomendas</span>
+    </a>
+    </div>
+
+    <div class="col-9 justify-content-center align-items-center main-content">
+      <!--Conteúdo principal vai aqui-->
+      <div class="col-md-8">
+        <!--Banner-->
+        <div id="banner" class="container mb-3 me-5 mt-3 p-lg-3">
+          <div class="row justify-content-center align-items-center">
+            <div class="p-4 bg-white text-center">
+              <p class="fw-bold">Banner Aqui</p>
+            </div>
+          </div>
+        </div>
+        <!--Artesão-->
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <div class="container name-photo d-flex align-items-center">
+              <div class="">
+                <img class="face border border-light-subtle d-inline-block" src="images/face-1.jpg" />
+              </div>
+              <div class="container text-start ps-4">
+                <p class="fs-2 text-white mb-0">Bárbara Abreu</p>
+                <p class="fs-6 text-white mt-0">Maia, Lisboa</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Produtos-->
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col-md-8">
+            <div class="container position-relative d-flex align-items-center">
+              <img src="images/produto1.jpg" class="img-produto" />
+              <p class="text-white ms-5">Produto 1</p>
+            </div>
+          </div>
+          <div class="col-4 align-items-center justify-content-center">
+            <a href="pagamento.html"><button class="btn btn-light float-end">Comprar</button></a>
+          </div>
+        </div>
+        <!--Descrição dos produtos-->
+        <div class="row mt-3">
+          <div class="container">
+            <div class="text-white text-justify">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                eveniet libero quisquam fuga voluptate minus fugiat id error
+                distinctio, dolorem, deleniti facilis, vero at quaerat
+                aspernatur delectus laboriosam. Veritatis modi dignissimos,
+                quidem eveniet fugit voluptas deserunt assumenda vero nihil
+                non praesentium architecto. Eos praesentium quasi neque
+                aliquid, accusamus veniam suscipit.
+              </p>
+              <ol>
+                <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Blanditiis, eaque.
+                </li>
+                <li>Lorem ipsum dolor sit amet.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat -->
+      <button id="chat_toggle_btn" type="button" class="btn btn-primary" onclick="toggle_chat()">Chat</button>
+      <div id="chat-banner" class="d-none chat-banner min-vh-100 px-0">
+        <div data-bind="foreach: messages" style="height: 95vh;">
+          <div class="chat-bubble mb-3"
+            data-bind="text: message, style: {float: $parent.user_here == user ? 'left' : 'right'}"></div>
+        </div>
+        <input type="text" id="chat-input" class="form-control chat-input" placeholder="message..."
+          style="width: 11%;" />
+        <button type="button" class="btn btn-primary chat-send-btn" onclick="send_message()">Send</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="knockout-3.5.1.js"></script>
+  <script src="chat.js"></script>
+  <script src="main_page.js"></script>
+</body>
+
+</html>

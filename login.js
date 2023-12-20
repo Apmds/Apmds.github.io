@@ -21,7 +21,10 @@ fetch(githubRepoUrl)
         console.error('Error fetching JSON file:', error);
     });
 
+var localStorageUser = false
+
 function check_login() {
+    localStorageUser = false
     error_msg = document.getElementById("error_msg")
     email = document.getElementById("email").value.trim()
     password = document.getElementById("password").value
@@ -44,6 +47,7 @@ function check_login() {
         console.log(password)
         console.log(right_password)
         if (password == right_password) {
+            localStorageUser = true
             return true
         } else {
             error_msg.classList.remove("d-none")
@@ -59,7 +63,15 @@ document.getElementById('login_form').addEventListener('submit', function (event
     event.preventDefault();
 
     email = document.getElementById("email").value.trim()
-    localStorage.setItem("conta_login", JSON.stringify({email: email, password: password}))
+
+    
+    if (localStorageUser) {
+        var account_data = JSON.parse(localStorage.getItem("conta_login"))
+    } else {
+        var account_data = user_logins[email]
+    }
+    
+    localStorage.setItem("conta_login", JSON.stringify({nome: account_data.nome, email: email, password: account_data.password, data_nascimento: account_data.data_nascimento, codigo_postal: account_data.codigo_postal, distrito: account_data.distrito, concelho: account_data.concelho}))
 
     
     window.location.href = 'main_page.html';
