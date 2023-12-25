@@ -8,7 +8,7 @@
     "concelho": "Vagos"
   },
   "goncalosimoes511@gmail.com": {
-    "nome": "GonÁalo Simıes",
+    "nome": "Gon√ßalo Sim√µes",
     "data_nascimento": "3/12/2005",
     "password": "4321",
     "codigo_postal": "7654-321",
@@ -16,7 +16,7 @@
     "concelho": "Vagos"
   },
   "goncaloliveirasilva@gmail.com": {
-    "nome": "GonÁalo Silva",
+    "nome": "Gon√ßalo Silva",
     "data_nascimento": "1/2/2004",
     "password": "gsil",
     "codigo_postal": "8124-120",
@@ -24,17 +24,11 @@
     "concelho": "Ponte de Lima"
   },
   "ap1mrfj@gmail.com": {
-    "nome": "AntÛnio Santos",
+    "nome": "Ant√≥nio Santos",
     "data_nascimento": "6/6/2005",
     "password": "A1Sd",
     "codigo_postal": "6574-958",
     "distrito": "Aveiro",
     "concelho": "Anadia"
   },
-  "email": "teste@123.com",
-  "password": "1234",
-  "birthdate": "2023-11-29",
-  "post_code": "5431-232",
-  "district": "Amongus",
-  "city": "Aveiro"
 }
