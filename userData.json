@@ -5,31 +5,44 @@
     "password": "1234",
     "codigo_postal": "1234-567",
     "distrito": "Aveiro",
-    "concelho": "Vagos"
+    "concelho": "Vagos",
+    "artesao": true,
+    "artesao_dados": {
+      "descricao": "Eu sou um artes√£o de elevada confian√ßa",
+      "artigos": [
+        {
+          "nome": "Produto 1",
+          "descricao": "Um produto muito bom :)"
+        }
+      ]
+    }
   },
   "goncalosimoes511@gmail.com": {
-    "nome": "GonÁalo Simıes",
+    "nome": "Gon√ßalo Sim√µes",
     "data_nascimento": "3/12/2005",
     "password": "4321",
     "codigo_postal": "7654-321",
     "distrito": "Aveiro",
-    "concelho": "Vagos"
+    "concelho": "Vagos",
+    "artesao": false
   },
   "goncaloliveirasilva@gmail.com": {
-    "nome": "GonÁalo Silva",
+    "nome": "Gon√ßalo Silva",
     "data_nascimento": "1/2/2004",
     "password": "gsil",
     "codigo_postal": "8124-120",
     "distrito": "Viana do Castelo",
-    "concelho": "Ponte de Lima"
+    "concelho": "Ponte de Lima",
+    "artesao": false
   },
   "ap1mrfj@gmail.com": {
-    "nome": "AntÛnio Santos",
+    "nome": "Ant√≥nio Santos",
     "data_nascimento": "6/6/2005",
     "password": "A1Sd",
     "codigo_postal": "6574-958",
     "distrito": "Aveiro",
-    "concelho": "Anadia"
+    "concelho": "Anadia",
+    "artesao": false
   },
   "teste@123.com": {
     "nome": "Teste",
@@ -37,6 +50,7 @@
     "password": "1234",
     "codigo_postal": "5431-232",
     "distrito": "Amongus",
-    "concelho": "Aveiro"
+    "concelho": "Aveiro",
+    "artesao": false
   }
 }
