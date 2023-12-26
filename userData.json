@@ -8,11 +8,11 @@
     "concelho": "Vagos",
     "artesao": true,
     "artesao_dados": {
-      "descricao": "Eu sou um artesão de elevada confiança",
+      "descricao": "Eu sou um artesão de elevada confiança.\nTodos os meus clientes ficam muito felizes com o meu trabalho.\n'Uau, muito bom.' - António Santos\n'Mid.' - Gonçalo Simões",
       "artigos": [
         {
-          "nome": "Produto 1",
-          "descricao": "Um produto muito bom :)"
+          "nome": "Camisola estilosa",
+          "descricao": "Uma camisola muito estilosa."
         }
       ]
     }
@@ -42,7 +42,20 @@
     "codigo_postal": "6574-958",
     "distrito": "Aveiro",
     "concelho": "Anadia",
-    "artesao": false
+    "artesao": true,
+    "artesao_dados": {
+      "descricao": "Eu faço 'roupa'.",
+      "artigos": [
+        {
+          "nome": "'Camisola'",
+          "descricao": "Uma peça de roupa muito 'interessante'."
+        },
+        {
+          "nome": "'Casaco'",
+          "descricao": "Esta coisa é definitivamente algo."
+        }
+      ]
+    }
   },
   "teste@123.com": {
     "nome": "Teste",
