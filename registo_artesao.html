@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royal-Taylor</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+  </head>
+  <body>
+    <div class="row min-vh-100">
+      <div class="col-3 text-center side-banner px-0">
+
+        <div class="container col-6">
+            <p class="fs-6 text-white mt-4 pb-3 border-bottom">Royal-Taylor</p>
+        </div>
+        <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white"
+            href="conta.html">
+            <span><i class="fa fa-user text-white" aria-hidden="true"></i> Conta</span>
+        </a>
+
+        <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white"
+            href="main_page.html">
+            <span><i class="fa fa-home text-white" aria-hidden="true"></i> Casa</span>
+        </a>
+
+        <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white"
+            href="favoritos.html">
+            <span><i class="fa fa-star-o text-white" aria-hidden="true"></i> Favoritos</span>
+        </a>
+
+        <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white"
+            href="encomendas.html">
+            <span><i class="fa fa-archive text-white" aria-hidden="true"></i> Encomendas</span>
+        </a>
+    </div>
+
+      <div class="col-9 justify-content-center align-items-center main-content">
+        <!--Conteúdo principal vai aqui-->
+        <div class="container p-5 pt-0 justify-content-center">
+          <h1 class="text-white fa-stack-2 fw-bold mb-4 mt-5">
+            Juntar-me como artesão
+          </h1>
+          <div>
+            <h2 class="dados-negocio mt-2">Dados do negócio</h2>
+            <hr class="dados-negocio border border-2" />
+          </div>
+          <form action="" method="post">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="select-distrito" class="text-white form-label"
+                      >Distrito:</label
+                    >
+                    <select
+                      class="form-select"
+                      id="select-distrito"
+                      data-bind="options: distritos, value: distritoSelecionado"
+                    ></select>
+                    <div id="erroDistrito" class="d-none text-warning fw-bold">
+                      Distrito inválido!
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="morada" class="text-white form-label"
+                      >Morada:</label
+                    >
+                    <input
+                      class="form-control"
+                      id="morada"
+                      type="text"
+                      placeholder="Morada..."
+                    />
+                    <div id="erroMorada" class="d-none text-warning fw-bold">
+                      Morada inválida!
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="concelho" class="text-white form-label"
+                      >Concelho:</label
+                    >
+                    <select
+                      class="form-select"
+                      id="concelho"
+                      data-bind="options: concelhos, value: concelhoSelecionado"
+                    ></select>
+                    <div id="erroConcelho" class="d-none text-warning fw-bold">
+                      Concelho inválido!
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="codigo-postal" class="text-white form-label"
+                      >Código-postal:</label
+                    >
+                    <input
+                      class="form-control"
+                      id="codigo-postal"
+                      type="text"
+                      placeholder="____-___"
+                    />
+                    <div
+                      id="erroCodigoPostal"
+                      class="d-none text-warning fw-bold"
+                    >
+                      Código-postal inválido!
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tipoartesao" class="container mt-4 mb-3">
+              <label for="tipoartesao" class="text-white">Profissão:</label>
+              <div class="form-check form-check-inline">
+                <input type="checkbox" id="alfaiate" value="Alfaiate">
+                <label class="text-white" for="alfaiate">Alfaiate</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="checkbox" id="joalheiro" value="Joallheiro">
+                <label class="text-white" for="joalheiro">Joalheiro</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="checkbox" id="sapateiro" value="Sapateiro">
+                <label class="text-white" for="sapateiro">Sapateiro</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="checkbox" id="outro" value="Outro">
+                <label class="text-white" for="outro">Outro</label>
+              </div>
+              <div
+                      id="erroprofissao"
+                      class="d-none text-warning fw-bold"
+                    >
+                      Selecione uma profissão!
+                    </div>
+            </div>
+          </form>
+          <div>
+            <button
+              type="submit"
+              class="btn btn-light float-end me-3 mt-4"
+              onclick="validarNegocio()"
+            >
+              Concluir
+            </button>
+            <button
+              class="btn btn-light float-end me-2 mt-4"
+              onclick="clearInput()"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="16"
+                width="14"
+                viewBox="0 0 448 512"
+              >
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                <path
+                  d="M135.2 17.7C140.6 6.8 151.7 0 163.8 0H284.2c12.1 0 23.2 6.8 28.6 17.7L320 32h96c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 96 0 81.7 0 64S14.3 32 32 32h96l7.2-14.3zM32 128H416V448c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V128zm96 64c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!--Banner-->
+        <div class="container flex-column d-flex">
+          <div
+            id="banner"
+            class="container align-items-end col-9 justify-content-center align-items-center p-lg-3 mt-5"
+          >
+            <div class="row justify-content-center align-items-center">
+              <img src="https://c0.wallpaperflare.com/preview/638/559/745/hands-textures-craft-diy-sewing.jpg" style="height: 400px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="knockout-3.5.1.js"></script>
+    <script src="main_page.js"></script>
+    <script src="registo_artesao.js"></script>
+  </body>
+</html>

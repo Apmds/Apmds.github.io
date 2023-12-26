@@ -43,41 +43,45 @@
             <!--Banner-->
             <div class="col-md-8">
                 <div id="banner" class="container mb-3 me-5 mt-3 p-lg-3">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="p-4 bg-white text-center">
-                            <p class="fw-bold">Banner Aqui</p>
-                        </div>
-                    </div>
+                    <img src="https://c1.wallpaperflare.com/preview/107/507/607/tailoring-tailor-costume-apparel.jpg" alt="banner" style="height: 300px; width: 90vh;">
                 </div>
             </div>
             <h1 id="table-title" class="p-4">Página principal</h1>
+            <div id="artesaos" class="row">
+                
+            </div>
+            <!--
             <table class="container">
                 <tr>
-                    <td> 
-                        <a href="detalhes_artesão_1.html"><img
-                                src="https://t4.ftcdn.net/jpg/02/04/02/65/360_F_204026582_rTFcseUqDfqQAfYUY9w12xzMNC4c1bNi.jpg"
-                                class="artesao-casa"><a>
+                    <td>
+                        <a href="detalhes_artesão_1.html">
+                            <img src="https://t4.ftcdn.net/jpg/02/04/02/65/360_F_204026582_rTFcseUqDfqQAfYUY9w12xzMNC4c1bNi.jpg" class="artesao-casa">
+                        </a>
                         <p class="text-white fs-3 mb-0">António Fonseca Martins</p>
                         <p class="text-white fs-6 mt-0">Mafra, Lisboa</p>
                     </td>
                     <td>
                         <div class="container align-items-center justify-content-center">
-                            <a href="detalhes_artesao.html"><img src="images/face-1.jpg" class="artesao-casa"><a>
+                            <a href="detalhes_artesao.html">
+                                <img src="images/face-1.jpg" class="artesao-casa">
+                            </a>
                             <p class="text-white fs-3 mb-0">Bárbara Abreu</p>
                             <p class="text-white fs-6 mt-0">Maia, Porto</p>
+                        </div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <a href="detalhes_artesao3.html"><img
                                 src="https://cdn.create.vista.com/api/media/small/194623104/stock-photo-senior-tailor-measuring-jacket-sleeve-tape-measure-sewing-workshop"
-                                class="artesao-casa"><a>
+                                class="artesao-casa">
+                            </a>
                         <p class="text-white fs-3 mb-0">Manuel Fernandes Silva</p>
                         <p class="text-white fs-6 mt-0">Gondomar, Porto</p>
                     </td>
                 </tr>
             </table>
-
+            -->
 
             <div class="container ">
 
@@ -87,8 +91,7 @@
             <button id="chat_toggle_btn" type="button" class="btn btn-primary" onclick="toggle_chat()">Chat</button>
             <div id="chat-banner" class="d-none chat-banner min-vh-100 px-0">
                 <div data-bind="foreach: messages" style="height: 95vh;">
-                    <div class="chat-bubble mb-3"
-                        data-bind="text: message, style: {float: $parent.user_here == user ? 'left' : 'right'}"></div>
+                    <div class="chat-bubble mb-3" data-bind="text: message, style: {float: float}"></div>
                 </div>
                 <input type="text" id="chat-input" class="form-control chat-input" placeholder="message..."
                     style="width: 11%;" />

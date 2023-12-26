@@ -48,9 +48,7 @@
           <!--Banner-->
           <div id="banner" class="container mb-3 me-5 mt-3 p-lg-3">
             <div class="row justify-content-center align-items-center">
-              <div class="p-4 bg-white text-center">
-                <p class="fw-bold">Banner Aqui</p>
-              </div>
+              <img src="https://c0.wallpaperflare.com/preview/67/371/796/artwork-composition-creating-creative.jpg" height="350px">
             </div>
           </div>
           <!--Artesão-->
@@ -133,7 +131,7 @@
     <div id="chat-banner" class="d-none chat-banner min-vh-100 px-0">
         <div data-bind="foreach: messages" style="height: 95vh;">
             <div class="chat-bubble mb-3"
-                data-bind="text: message, style: {float: $parent.user_here == user ? 'left' : 'right'}"></div>
+                data-bind="text: message, style: {float: float}"></div>
         </div>
         <input type="text" id="chat-input" class="form-control chat-input" placeholder="message..."
             style="width: 11%;" />

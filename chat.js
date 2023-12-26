@@ -1,27 +1,3 @@
-const githubRepoUrl = 'https://raw.githubusercontent.com/Apmds/Apmds.github.io/main/userData.json';
-/*
-function ajaxHelper(uri, method, data) {
-        self.error(''); // Clear error message
-        return $.ajax({
-            type: method,
-            url: uri,
-            dataType: 'json',
-            contentType: 'application/json',
-            data: data ? JSON.stringify(data) : null,
-            error: function (jqXHR, textStatus, errorThrown) {
-                console.log("AJAX Call[" + uri + "] Fail...");
-                hideLoading();
-                self.error(errorThrown);
-            }
-        });
-    }
-
-    ajaxHelper(githubRepoUrl, "get").done(function (data) {
-        console.log(data)
-        vm.messages(data)
-    })
-*/
-
 var vm = {
     messages: ko.observableArray([]),
     user_here: ko.observable(JSON.parse(localStorage.getItem("conta_login")).email),
@@ -29,11 +5,11 @@ var vm = {
 }
 
 $(document).ready(function () {
-    var chat_log = localStorage.getItem("chat_log")
+    var chat_log = JSON.parse(localStorage.getItem("chat-log"))
     if (chat_log == null) {
-        localStorage.setItem("chat_log", JSON.stringify([]))
+        localStorage.setItem("chat-log", JSON.stringify([]))
     }
-    
+    vm.messages(chat_log)
 
     ko.applyBindings(vm)
 })
@@ -41,21 +17,36 @@ $(document).ready(function () {
 function send_message() {
     $("#chat-input").val($("#chat-input").val().trim())
     if ($("#chat-input").val() != "") {
-        vm.messages.push({user: JSON.parse(localStorage.getItem("conta_login")).email, message: $("#chat-input").val()})
+        vm.messages.push({user: JSON.parse(localStorage.getItem("conta_login")).email,
+        message: $("#chat-input").val(),
+        float: vm.messages.user_here == JSON.parse(localStorage.getItem("conta_login")).email ? "left" : "right"})
         $("#chat-input").val("")
+        console.log(JSON.parse(localStorage.getItem("conta_login")).email)
     }
+    if (vm.messages().length > 9) {
+        while (vm.messages().length > 9) {
+            vm.messages.shift()
+        }
+    }
+    localStorage.setItem("chat-log", JSON.stringify(vm.messages()))
 
-    
-    console.log(vm.messages())
     setTimeout(function () {
         var responses = [
             "Olá! Agradeço o contacto.",
-            "eu💀",
-            "A sua camisola está quase pronta, D.Anastácia! :)",
+            "A sua camisola está quase pronta!",
         ]
         
         var randomItem = responses[Math.floor(Math.random()*responses.length)];
-        vm.messages.push({user: "Outra pessoa", message: randomItem})
+        vm.messages.push({user: "Outra pessoa", message: randomItem, float: vm.messages.user_there == JSON.parse(localStorage.getItem("conta_login")).email ? "right" : "left"})
+
+
+        if (vm.messages().length > 9) {
+            while (vm.messages().length > 9) {
+                vm.messages.shift()
+            }
+        }
+
+        localStorage.setItem("chat-log", JSON.stringify(vm.messages()))
     }, Math.floor(Math.random() * 1000) + 1)
 }
 
@@ -67,5 +58,4 @@ function toggle_chat() {
     } else {
         $("#chat_toggle_btn").css("right", "16%")
     }
-    
 }

@@ -57,8 +57,8 @@
                 <img class="face border border-light-subtle d-inline-block" src="images/face-1.jpg" />
               </div>
               <div class="container text-start ps-4">
-                <p class="fs-2 text-white mb-0">Bárbara Abreu</p>
-                <p class="fs-6 text-white mt-0">Maia, Lisboa</p>
+                <p id="nome" class="fs-2 text-white mb-0"></p>
+                <p id="localizacao" class="fs-6 text-white mt-0"></p>
               </div>
             </div>
           </div>
@@ -68,7 +68,7 @@
           <div class="col-md-8">
             <div class="container position-relative d-flex align-items-center">
               <img src="images/produto1.jpg" class="img-produto" />
-              <p class="text-white ms-5">Produto 1</p>
+              <p id="produto-nome" class="text-white ms-5"></p>
             </div>
           </div>
           <div class="col-4 align-items-center justify-content-center">
@@ -78,7 +78,8 @@
         <!--Descrição dos produtos-->
         <div class="row mt-3">
           <div class="container">
-            <div class="text-white text-justify">
+            <div id="produto-descricao" class="text-white text-justify">
+              <!--
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. In
                 eveniet libero quisquam fuga voluptate minus fugiat id error
@@ -97,6 +98,7 @@
                 </li>
                 <li>Lorem ipsum dolor sit amet.</li>
               </ol>
+              -->
             </div>
           </div>
         </div>
@@ -107,7 +109,7 @@
       <div id="chat-banner" class="d-none chat-banner min-vh-100 px-0">
         <div data-bind="foreach: messages" style="height: 95vh;">
           <div class="chat-bubble mb-3"
-            data-bind="text: message, style: {float: $parent.user_here == user ? 'left' : 'right'}"></div>
+            data-bind="text: message, style: {float: float}"></div>
         </div>
         <input type="text" id="chat-input" class="form-control chat-input" placeholder="message..."
           style="width: 11%;" />
@@ -120,7 +122,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="knockout-3.5.1.js"></script>
   <script src="chat.js"></script>
-  <script src="main_page.js"></script>
+  <script src="detalhes_produto.js"></script>
 </body>
 
 </html>

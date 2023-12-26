@@ -1,4 +1,5 @@
 var conta_atual;
+const githubRepoUrl = 'https://raw.githubusercontent.com/Apmds/Apmds.github.io/main/userData.json';
 
 window.onload = function () {
     conta_atual = JSON.parse(localStorage.getItem("conta_login"));

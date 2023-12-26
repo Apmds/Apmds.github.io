@@ -1,6 +1,6 @@
 const githubRepoUrl = 'https://raw.githubusercontent.com/Apmds/Apmds.github.io/main/userData.json';
 
-var artesaos_lista = []
+var favoritos_lista = []
 
 fetch(githubRepoUrl)
     .then(response => {
@@ -13,12 +13,12 @@ fetch(githubRepoUrl)
         
         // Process the JSON data here
         Object.entries(data).forEach(login => {
-            if (login[1].artesao) {
-                artesaos_lista.push({...login[1], id:login[0]})
+            if (JSON.parse(localStorage.getItem("favoritos")).includes(login[0])) {
+                favoritos_lista.push({...login[1], id:login[0]})
             }
             
         })
-        console.log(artesaos_lista);
+        console.log(favoritos_lista);
         update_html()
     })
     .catch(error => {
@@ -26,20 +26,20 @@ fetch(githubRepoUrl)
     });
     
 function update_html() {
-    if (artesaos_lista.length == 0) {
-        $("#artesaos").addClass("text-light d-flex justify-content-center align-items-center")
-        $("#artesaos").html( $("#artesaos").html() + "Não há nada aqui...")
+    if (favoritos_lista.length == 0) {
+        $("#favoritos").addClass("text-light d-flex justify-content-center align-items-center")
+        $("#favoritos").html( $("#favoritos").html() + "Não há nada aqui...")
         return
     } 
-    for (let i = 0; i < artesaos_lista.length; i++) {
-        $("#artesaos").html( $("#artesaos").html() + 
+    for (let i = 0; i < favoritos_lista.length; i++) {
+        $("#favoritos").html( $("#favoritos").html() + 
             `
             <div class="col-4">
-                <a href="detalhes_artesao.html?user=${artesaos_lista[i].id}">
+                <a href="detalhes_artesao.html?user=${favoritos_lista[i].id}">
                     <img src="https://t4.ftcdn.net/jpg/02/04/02/65/360_F_204026582_rTFcseUqDfqQAfYUY9w12xzMNC4c1bNi.jpg" class="artesao-casa">
                 </a>
-                <p class="text-white fs-3 mb-0">${artesaos_lista[i].nome}</p>
-                <p class="text-white fs-6 mt-0">${artesaos_lista[i].concelho}, ${artesaos_lista[i].distrito}</p>
+                <p class="text-white fs-3 mb-0">${favoritos_lista[i].nome}</p>
+                <p class="text-white fs-6 mt-0">${favoritos_lista[i].concelho}, ${favoritos_lista[i].distrito}</p>
             </div>
             `
         )

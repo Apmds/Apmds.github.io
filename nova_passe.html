@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Nova palavra-passe</title>
     <link href="styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
@@ -21,7 +21,7 @@
             
         <div class="col-9 d-flex align-items-center main-content">
             <div class="container text-center justify-content-center">
-                <p id="login-welcome" class="fs-3 text-white fw-bold">Faça o login para começar a encomendar peças!</p>
+                <p id="login-welcome" class="fs-3 text-white fw-bold">Crie uma nova palavra-passe</p>
                 <form action="" id="login_form" method="post" class="login">
 
                     <div class="form-group col-4 container text-center">
@@ -32,15 +32,15 @@
                     <div class="form-group col-4 container text-center mt-3">
                         <label for="password" class="text-white form-label">Palavra-passe:</label>
                         <input class="form-control" id="password" name="password" type="password" placeholder="Insira a sua palavra-passe" maxlength="10" minlength="2">
-                </div>
-
-                    <p class="text-white mt-3">Esqueceu-se da palavra-passe? <a href="nova_passe.html">Clique aqui</a></p>
-                    <p class="text-white">Não possui conta? <a href="sign_up.html"> Crie uma</a></p>
-                    
-                    <button type="submit" id="submit" class="btn btn-light" onclick="return check_login()">Login</button>
+                        <input class="form-control mt-3" id="confpassword" name="password" type="password" placeholder="Confirme a sua palavra-passe" maxlength="10" minlength="2">
+                    </div>
+                    <button type="submit" id="submit" class="btn btn-light mt-3" onclick="return check_password()">Nova password</button>
                 </form>
 
-                <p id="error_msg" class="text-white mt-3 d-none">Email ou password erradas!</p>
+                <p id="error_msg1" class="text-white mt-3 d-none">Não pode voltar a introduzir a mesma password!</p>
+                <p id="error_msg2" class="text-white mt-3 d-none">As passwords não correspondem!</p>
+                <p id="error_msg3" class="text-white mt-3 d-none">O email introduzido não está registado!</p>
+
             </div>
         </div>
     </div>
