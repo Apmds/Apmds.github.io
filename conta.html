@@ -55,8 +55,10 @@
                         <div id="email"></div>
                     </div>
                     <div class="col-3 d-flex align-items-center ">
-                        <button type="button" class="btn btn-outline-info    "
+                        <a id="btn-perfil" href="editar_perfil.html">
+                            <button type="button" class="btn btn-outline-info"
                             id="edit-profile">Editar Perfil</button>
+                        </a>
                     </div>
                 </div>
                 <div class="col-12 shade mx-0 px-0 row">
@@ -81,22 +83,23 @@
                     <div id="ver-produtos" class="container d-none">
                         <div class="row justify-content-end">
                             <div class="col-12">
-                                <button id="edit-profile" class="btn btn-outline-info mt-2 mb-2 float-end">Os meus produtos</button>
+                                <a id="ver-perfil-artesao" href="">
+                                    <button id="edit-profile" class="btn btn-outline-info mt-2 mb-2 float-end">Meu perfil</button>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 shade mx-0 px-0 row">
-                    <div class="col-3 mt-2">
+                <div id="container-aderir-artesao" class="col-12 shade mx-0 px-0 row d-none d-flex align-items-center h-100">
+                    <div class="col-3 mt-2 pb-2 text-center">
                         <a id="aderir-artesao" href="registo_artesao.html">
-                            <button type="button  " class="btn btn-outline-info d-flex align-items-center"
-                            id="edit-profile">Junta-te como artesão</button>
+                            <button type="button" class="btn btn-outline-info" id="edit-profile">Junte-se como artesão</button>
                         </a>
                     </div>
-                    <div class="col-9">
-                        <p>Se tem um negócio de peças costumizadas, junte-se como artesão e venha expandir o seu negócio com a Royal-Taylor.</p>
+                    <div class="col-9 text-center pt-2">
+                        <p>Se tem um negócio de peças customizadas, junte-se como artesão e venha expandir o seu negócio com a Royal-Taylor.</p>
                     </div>
-                </div>
+                </div>                             
             </div>
             <div id="vender-produtos" class="d-none">
                 <div class="row col-12 shade mx-0 px-0 d-flex">
@@ -104,13 +107,15 @@
                         <p class="mt-3 mb-0">Comece já a vender os seus produtos!</p>
                     </div>
                     <div class="col-3">
-                        <button id="edit-profile" class="btn btn-outline-info align-items-center mt-2 mb-2">Adicionar produtos</button>
+                        <a id="adicionar-produtos" href="adicionar_produtos.html">
+                            <button id="edit-profile" class="btn btn-outline-info align-items-center mt-2 mb-2">Adicionar produtos</button>
+                        </a>
                     </div>
                 </div>
             </div>
-            <button type="button" class="btn btn-outline-info" id="edit-profile" onclick="window.location.href='index.html'">Terminar sessão</button>
+            <button type="button" class="btn btn-outline-info w-25 text-center mx-auto" id="edit-profile" onclick="window.location.href='index.html'">Terminar sessão</button>
         </div>
-
+        <script src="knockout-3.5.1.js"></script>
         <script src="conta.js"></script>
 </body>
 

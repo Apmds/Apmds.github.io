@@ -28,6 +28,9 @@ function caesarCipherDecrypt(text, shift) {
     return caesarCipherEncrypt(text, -shift);
 }
   
+function utf8_to_b64(str) {
+    return btoa(unescape(encodeURIComponent(str)));
+}
 
 /*
 // Função para buscar dados do repositório GitHub
@@ -49,16 +52,25 @@ function fetchDataFromGitHub(url, storageKey) {
         });
 }
 */
+
 // Buscar dados do repositório GitHub
-fetchDataFromGitHub(apiUrl, 'sha-hash-api')
-    .then(() => fetchDataFromGitHub(githubRepoUrl, 'user-logins'))
-    .then(() => {
-        // Processar os dados JSON aqui
-        userLogins = JSON.parse(localStorage.getItem('user-logins')) || {};
+fetch(githubRepoUrl)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`Failed to fetch JSON file: ${response.status} ${response.statusText}`);
+        }
+      return response.json();
+    })
+    .then(data => {
+        
+        // Process the JSON data here
+        Object.entries(data).forEach(user => {
+            userLogins[user[0]] = user[1]
+        })
         console.log(userLogins);
     })
     .catch(error => {
-        console.error('Error fetching data:', error);
+        console.error('Error fetching JSON file:', error);
     });
 
 var localStorageUser = false;
@@ -98,31 +110,56 @@ document.getElementById('nova_passe_form').addEventListener('submit', function (
     var error_msg1 = document.getElementById('error_msg1');
     var error_msg2 = document.getElementById('error_msg2');
     var error_msg3 = document.getElementById('error_msg3');
-/*
+
     if (checkPassword(email, password, confpassword)) {
         var accountData = userLogins[email] || JSON.parse(localStorage.getItem('conta_login')) || {};
 
         localStorage.setItem('conta_login', JSON.stringify({
             nome: accountData.nome,
             email: email,
-            password: accountData.password,
+            password: password,
             data_nascimento: accountData.data_nascimento,
             codigo_postal: accountData.codigo_postal,
             distrito: accountData.distrito,
             concelho: accountData.concelho
         }));
 
+        fetch(githubRepoUrl)
+        .then(response => response.json())
+        .then(data => {
+        // Update the data as needed
+        data[email] = {
+            "nome": data[email].nome,
+            "data_nascimento": data[email].data_nascimento,
+            "password": password,
+            "codigo_postal": data[email].codigo_postal,
+            "distrito": data[email].distrito,
+            "concelho": data[email].concelho,
+            "artesao": data[email].artesao,
+        }
+        console.log(data)
+        // Call the function to update the file on GitHub
+        updateFileOnGitHub(JSON.stringify(data, null, 2));
+        })
+        .catch(error => console.error('Error fetching JSON:', error));
         //window.location.href = 'main_page.html';
     }
-});*/
+});
 
 function checkPassword(email, password, confpassword) {
     var error_msg1 = document.getElementById('error_msg1');
     var error_msg2 = document.getElementById('error_msg2');
     var error_msg3 = document.getElementById('error_msg3');
 
-    console.log("Password:", password)
-    console.log("Right password:", userLogins[email].password)
+    error_msg1.classList.add('d-none');
+    error_msg2.classList.add('d-none');
+    error_msg3.classList.add('d-none');
+
+    if (password !== confpassword) {
+        error_msg2.classList.remove('d-none')
+        return false
+    }
+
     if (Object.keys(userLogins).includes(email)) {
         var rightPassword = userLogins[email].password;
 

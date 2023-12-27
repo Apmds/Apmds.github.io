@@ -44,8 +44,6 @@ function caesarCipherEncrypt(text, shift) {
 function caesarCipherDecrypt(text, shift) {
     return caesarCipherEncrypt(text, -shift);
 }
-  
-// Example usage:
 
 function first_page() {
     document.getElementById("page1").classList.remove("d-none")
@@ -59,12 +57,9 @@ function second_page() {
 
 function utf8_to_b64(str) {
     return btoa(unescape(encodeURIComponent(str)));
-  }
+}
 
 function updateFileOnGitHub(newContent) {
-    console.log(newContent)
-    
-    
     // Make a PUT request to update the file
     fetch(apiUrl, {
         method: 'PUT',

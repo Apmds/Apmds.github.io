@@ -12,7 +12,8 @@
       "artigos": [
         {
           "nome": "Camisola estilosa",
-          "descricao": "Uma camisola muito estilosa."
+          "descricao": "Uma camisola muito estilosa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus quis odio id accumsan. Vivamus maximus dapibus sodales. Phasellus lectus nulla, tempus eget vehicula eleifend, dignissim vitae est. Cras accumsan metus risus, condimentum dapibus mi posuere vel. Nulla in mattis sapien. Cras id accumsan leo. Maecenas rutrum augue ac magna tincidunt tempus. In feugiat nibh a lobortis venenatis. Nullam auctor sagittis libero. Suspendisse interdum ex vitae blandit scelerisque. Vestibulum feugiat porttitor urna, quis sollicitudin quam posuere nec. Aliquam volutpat est sed imperdiet interdum. Fusce convallis tortor at arcu egestas rhoncus. Nullam in porttitor mauris, a elementum orci. Sed ut mi at ex maximus blandit eget sed nulla.",
+          "preco":"24"
         }
       ]
     }
@@ -62,7 +63,7 @@
     "data_nascimento": "2023-11-27",
     "password": "1234",
     "codigo_postal": "5431-232",
-    "distrito": "Amongus",
+    "distrito": "Aveiro",
     "concelho": "Aveiro",
     "artesao": false
   },

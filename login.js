@@ -78,6 +78,9 @@ function check_login() {
         console.log(right_password)
         if (password == right_password) {
             return true
+        } else if (password == JSON.parse(localStorage.getItem("conta_login")).password && email == JSON.parse(localStorage.getItem("conta_login")).email) {
+            localStorageUser = true
+            return true
         } else {
             error_msg.classList.remove("d-none")
         return false
@@ -111,8 +114,8 @@ document.getElementById('login_form').addEventListener('submit', function (event
         var account_data = user_logins[email]
     }
     
-    localStorage.setItem("conta_login", JSON.stringify({nome: account_data.nome, email: email, password: account_data.password, data_nascimento: account_data.data_nascimento, codigo_postal: account_data.codigo_postal, distrito: account_data.distrito, concelho: account_data.concelho}))
-    
+    localStorage.setItem("conta_login", JSON.stringify({...account_data, email: email}))
+
     window.location.href = 'main_page.html';
 });
 

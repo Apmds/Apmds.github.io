@@ -1,4 +1,3 @@
-
 var viewModel = {
     distritos: ko.observableArray(),
     distritoSelecionado: ko.observable(),
@@ -109,12 +108,10 @@ function validarNegocio() {
         document.getElementById("erroprofissao").classList.add("d-none")
     }
 
-    if (moradaValida && codigoPostalValido && distritoValido && concelhoValido && profissoesValidas) {
-        window.location.href = "/registo_artesao_efetuado.html"
-    }
-
     return moradaValida && codigoPostalValido && distritoValido && concelhoValido && profissoesValidas
 }
+
+
 
 function clearInput() {
     const morada = document.getElementById("morada")
@@ -133,4 +130,17 @@ function clearInput() {
     })
 
 }
+
+function submeter() {
+    if (!validarNegocio()) {
+        return
+    }
+    var conta_atual = JSON.parse(localStorage.getItem("conta_login"))
+    conta_atual.artesao = true
+    conta_atual.artesao_dados = {descricao: "Descrição muito interessante.", artigos:[]}
+    localStorage.setItem("conta_login", JSON.stringify(conta_atual))
+
+    window.location.href = "/registo_artesao_efetuado.html"
+}
+
 

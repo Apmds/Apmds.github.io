@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal-Taylor</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+
+<body>
+    <div class="row min-vh-100">
+        <div class="col-3 text-center side-banner px-0">
+
+            <div class="container col-6">
+                <p class="fs-6 text-white mt-4 pb-3 border-bottom">Royal-Taylor</p>
+            </div>
+            <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white"
+                href="conta.html">
+                <span><i class="fa fa-user text-white" aria-hidden="true"></i> Conta</span>
+            </a>
+
+            <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white"
+                href="main_page.html">
+                <span><i class="fa fa-home text-white" aria-hidden="true"></i> Casa</span>
+            </a>
+
+            <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white"
+                href="favoritos.html">
+                <span><i class="fa fa-star-o text-white" aria-hidden="true"></i> Favoritos</span>
+            </a>
+
+            <a class="side-banner-link d-flex align-items-center justify-content-center text-decoration-none text-white"
+                href="encomendas.html">
+                <span><i class="fa fa-archive text-white" aria-hidden="true"></i> Encomendas</span>
+            </a>
+        </div>
+
+        <div class="col-9 main-content container p-5">
+            <div class="row">
+                <div class="col-12 shade mx-0 px-0 row">
+                    <div class="col-3">
+                        <img src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-541.jpg?size=338&ext=jpg&ga=GA1.1.1546980028.1702944000&semt=ais" class="hex" alt="Logo">
+                    </div>
+                    <div class="col-6 mt-4">
+                        <h2>A sua conta:</h2>
+                        <div>
+                            <h4 id="nome"></h4>
+                        </div>
+                        <div id="email"></div>
+                    </div>
+                </div>
+                <div class="col-12 shade mx-0 px-0 row">
+                    <div class="col-8 row align-items-center">
+                        <h2>As suas medidas</h2>
+                        <hr>
+                        <div class="col-6">
+                            <h3>Medidas</h3>
+                            <div class="container d-flex mb-4">
+                                <div class="col-4 me-3">
+                                    <label for="input-cintura" class="form-label">Cintura:</label>
+                                    <input id="input-cintura" type="text" class="form-control" placeholder="...">
+                                    <div id="input-erro-cintura" class="text-warning fw-bold d-none">
+                                        Insira uma medida válida!
+                                    </div>
+                                </div>
+                                <div class="col-4 me-3">
+                                    <label for="input-peito" class="form-label">Peito:</label>
+                                    <input id="input-peito" type="text" class="form-control" placeholder="...">
+                                    <div id="input-erro-peito" class="text-warning fw-bold d-none">
+                                        Insira uma medida válida!
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <label for="input-pescoco" class="form-label">Pescoço:</label>
+                                    <input id="input-pescoco" type="text" class="form-control" placeholder="...">
+                                    <div id="input-erro-pescoco" class="text-warning fw-bold d-none">
+                                        Insira uma medida válida!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <h2>Dados Pessoais</h2>
+                        <hr>
+                        <div class="container d-flex">
+                            <div class="me-2">
+                                <label for="input-data-nascimento" class="form-label">Data nascimento:</label>
+                                <input id="input-data-nascimento" type="date" class="form-control" placeholder="">
+                                <div id="erro-perfil-data-nascimento" class="d-none text-warning fw-bold">
+                                    Data nascimento inválida!
+                                </div>
+                            </div>
+                            <div>
+                                <label for="input-codigo-postal" class="form-label">Código-postal:</label>
+                                <input id="input-codigo-postal" type="text" class="form-control" placeholder="">
+                                <div id="erro-perfil-postal" class="d-none text-warning fw-bold">
+                                    Código-postal inválido!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container d-flex">
+                            <div class="me-2">
+                                <label for="perfil-select-distrito" class="form-label">Distrito:</label>
+                                <select class="form-select" id="perfil-select-distrito" data-bind="options: distritos, value: distritoSelecionado"></select>
+                                <div id="erro-perfil-distrito" class="d-none text-warning fw-bold">
+                                    Distrito inválido!
+                                </div>
+                            </div>
+                            <div>
+                                <label for="perfil-select-concelho" class="form-label">Concelho:</label>
+                                <select class="form-select" id="perfil-select-concelho" data-bind="options: concelhos, value: concelhoSelecionado"></select>
+                                <div id="erro-perfil-concelho" class="d-none text-warning fw-bold">
+                                    Concelho inválido!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <button type="button" id="edit-profile" class="btn btn-outline-info float-end mt-3 mb-3 me-3" onclick="validarMedidas()">Salvar</button>
+                    </div>
+                </div>                   
+            </div>
+        </div>
+        
+        <script src="knockout-3.5.1.js"></script>
+        <script src="conta.js"></script>
+        <script src="editar_perfil.js"></script>
+</body>
+
+</html>

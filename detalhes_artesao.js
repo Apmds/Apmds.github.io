@@ -8,10 +8,10 @@ fetch(githubRepoUrl)
         if (!response.ok) {
             throw new Error(`Failed to fetch JSON file: ${response.status} ${response.statusText}`);
         }
-      return response.json();
+        return response.json();
     })
     .then(data => {
-        
+
         // Process the JSON data here
         var user = getUrlParameter("user")
         Object.entries(data).forEach(login => {
@@ -56,6 +56,17 @@ function update_html() {
     var artigos = dados_artesao.artesao_dados.artigos
     for (let i = 0; i < artigos.length; i++) {
         $("#produtos").html($("#produtos").html() + `<div class='container position-relative d-flex flex-column align-items-center'><a href='detalhes_produto.html?user=${getUrlParameter("user")}&prodId=${i}'><img src='images/produto1.jpg' class='img-produto' /></a><p class='text-white'>${artigos[i].nome}</p></div>`)
+    }
+
+    let favoritos_lista = localStorage.getItem("favoritos")
+    console.log(favoritos_lista)
+    if (favoritos_lista == null) {
+        favoritos_lista = "[]"
+    }
+    favoritos_lista = JSON.parse(favoritos_lista)
+
+    if (favoritos_lista.includes(getUrlParameter("user"))) {
+        $("#favourite-btn").addClass("text-danger")
     }
 }
 

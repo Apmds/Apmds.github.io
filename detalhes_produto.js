@@ -54,4 +54,7 @@ function update_html() {
     for (let i = 0; i < descricao.length; i++) {
         $("#produto-descricao").html( $("#produto-descricao").html() + descricao)
     }
+    var preco = dados_artesao.artesao_dados.artigos["preco"]
+    $("#preco").text(artigo.preco + " €")
+    console.log(preco)
 }
