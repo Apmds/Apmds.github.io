@@ -8,7 +8,7 @@
     "concelho": "Vagos",
     "artesao": true,
     "artesao_dados": {
-      "descricao": "Eu sou um artesão de elevada confiança.\nTodos os meus clientes ficam muito felizes com o meu trabalho.\n'Uau, muito bom.' - António Santos\n'Mid.' - Gonçalo Simões",
+      "descricao": "Eu sou um artesï¿½o de elevada confianï¿½a.\nTodos os meus clientes ficam muito felizes com o meu trabalho.\n'Uau, muito bom.' - Antï¿½nio Santos\n'Mid.' - Gonï¿½alo Simï¿½es",
       "artigos": [
         {
           "nome": "Camisola estilosa",
@@ -18,7 +18,7 @@
     }
   },
   "goncalosimoes511@gmail.com": {
-    "nome": "Gonçalo Simões",
+    "nome": "Gonï¿½alo Simï¿½es",
     "data_nascimento": "3/12/2005",
     "password": "4321",
     "codigo_postal": "7654-321",
@@ -27,7 +27,7 @@
     "artesao": false
   },
   "goncaloliveirasilva@gmail.com": {
-    "nome": "Gonçalo Silva",
+    "nome": "Gonï¿½alo Silva",
     "data_nascimento": "1/2/2004",
     "password": "gsil",
     "codigo_postal": "8124-120",
@@ -36,7 +36,7 @@
     "artesao": false
   },
   "ap1mrfj@gmail.com": {
-    "nome": "António Santos",
+    "nome": "Antï¿½nio Santos",
     "data_nascimento": "6/6/2005",
     "password": "A1Sd",
     "codigo_postal": "6574-958",
@@ -44,15 +44,15 @@
     "concelho": "Anadia",
     "artesao": true,
     "artesao_dados": {
-      "descricao": "Eu faço 'roupa'.",
+      "descricao": "Eu faï¿½o 'roupa'.",
       "artigos": [
         {
           "nome": "'Camisola'",
-          "descricao": "Uma peça de roupa muito 'interessante'."
+          "descricao": "Uma peï¿½a de roupa muito 'interessante'."
         },
         {
           "nome": "'Casaco'",
-          "descricao": "Esta coisa é definitivamente algo."
+          "descricao": "Esta coisa ï¿½ definitivamente algo."
         }
       ]
     }
@@ -82,5 +82,14 @@
     "distrito": "Leiria",
     "nome": "Teste3",
     "password": "54321"
+  },
+  "teste4@123.com": {
+    "nome": "Teste4",
+    "data_nascimento": "2023-12-25",
+    "password": "teste",
+    "codigo_postal": "7654-789",
+    "distrito": "Coimbra",
+    "concelho": "Leiria",
+    "artesao": false
   }
 }
