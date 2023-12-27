@@ -8,7 +8,7 @@
     "concelho": "Vagos",
     "artesao": true,
     "artesao_dados": {
-      "descricao": "Eu sou um artes�o de elevada confian�a.\nTodos os meus clientes ficam muito felizes com o meu trabalho.\n'Uau, muito bom.' - Ant�nio Santos\n'Mid.' - Gon�alo Sim�es",
+      "descricao": "Eu sou um artesão de elevada confiança.\nTodos os meus clientes ficam muito felizes com o meu trabalho.\n'Uau, muito bom.' - António Santos\n'Mid.' - Gonçalo Simões",
       "artigos": [
         {
           "nome": "Camisola estilosa",
@@ -18,7 +18,7 @@
     }
   },
   "goncalosimoes511@gmail.com": {
-    "nome": "Gon�alo Sim�es",
+    "nome": "Gonçalo Simões",
     "data_nascimento": "3/12/2005",
     "password": "4321",
     "codigo_postal": "7654-321",
@@ -27,7 +27,7 @@
     "artesao": false
   },
   "goncaloliveirasilva@gmail.com": {
-    "nome": "Gon�alo Silva",
+    "nome": "Gonçalo Silva",
     "data_nascimento": "1/2/2004",
     "password": "gsil",
     "codigo_postal": "8124-120",
@@ -36,7 +36,7 @@
     "artesao": false
   },
   "ap1mrfj@gmail.com": {
-    "nome": "Ant�nio Santos",
+    "nome": "António Santos",
     "data_nascimento": "6/6/2005",
     "password": "A1Sd",
     "codigo_postal": "6574-958",
@@ -44,15 +44,15 @@
     "concelho": "Anadia",
     "artesao": true,
     "artesao_dados": {
-      "descricao": "Eu fa�o 'roupa'.",
+      "descricao": "Eu faço 'roupa'.",
       "artigos": [
         {
           "nome": "'Camisola'",
-          "descricao": "Uma pe�a de roupa muito 'interessante'."
+          "descricao": "Uma peça de roupa muito 'interessante'."
         },
         {
           "nome": "'Casaco'",
-          "descricao": "Esta coisa � definitivamente algo."
+          "descricao": "Esta coisa é definitivamente algo."
         }
       ]
     }
