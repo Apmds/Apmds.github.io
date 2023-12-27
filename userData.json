@@ -1,1 +1,77 @@
-eyJzYW11ZWwucmFtb3Muc2dmckBnbWFpbC5jb20iOnsibm9tZSI6IlNhbXVlbCBSYW1vcyIsImRhdGFfbmFzY2ltZW50byI6IjE2LzMvMjAwNSIsInBhc3N3b3JkIjoiMTIzNCIsImNvZGlnb19wb3N0YWwiOiIxMjM0LTU2NyIsImRpc3RyaXRvIjoiQXZlaXJvIiwiY29uY2VsaG8iOiJWYWdvcyIsImFydGVzYW8iOnRydWUsImFydGVzYW9fZGFkb3MiOnsiZGVzY3JpY2FvIjoiRXUgc291IHVtIGFydGVz428gZGUgZWxldmFkYSBjb25maWFu52EuXG5Ub2RvcyBvcyBtZXVzIGNsaWVudGVzIGZpY2FtIG11aXRvIGZlbGl6ZXMgY29tIG8gbWV1IHRyYWJhbGhvLlxuJ1VhdSwgbXVpdG8gYm9tLicgLSBBbnTzbmlvIFNhbnRvc1xuJ01pZC4nIC0gR29u52FsbyBTaW31ZXMiLCJhcnRpZ29zIjpbeyJub21lIjoiQ2FtaXNvbGEgZXN0aWxvc2EiLCJkZXNjcmljYW8iOiJVbWEgY2FtaXNvbGEgbXVpdG8gZXN0aWxvc2EuIn1dfX0sImdvbmNhbG9zaW1vZXM1MTFAZ21haWwuY29tIjp7Im5vbWUiOiJHb27nYWxvIFNpbfVlcyIsImRhdGFfbmFzY2ltZW50byI6IjMvMTIvMjAwNSIsInBhc3N3b3JkIjoiNDMyMSIsImNvZGlnb19wb3N0YWwiOiI3NjU0LTMyMSIsImRpc3RyaXRvIjoiQXZlaXJvIiwiY29uY2VsaG8iOiJWYWdvcyIsImFydGVzYW8iOmZhbHNlfSwiZ29uY2Fsb2xpdmVpcmFzaWx2YUBnbWFpbC5jb20iOnsibm9tZSI6IkdvbudhbG8gU2lsdmEiLCJkYXRhX25hc2NpbWVudG8iOiIxLzIvMjAwNCIsInBhc3N3b3JkIjoiZ3NpbCIsImNvZGlnb19wb3N0YWwiOiI4MTI0LTEyMCIsImRpc3RyaXRvIjoiVmlhbmEgZG8gQ2FzdGVsbyIsImNvbmNlbGhvIjoiUG9udGUgZGUgTGltYSIsImFydGVzYW8iOmZhbHNlfSwiYXAxbXJmakBnbWFpbC5jb20iOnsibm9tZSI6IkFudPNuaW8gU2FudG9zIiwiZGF0YV9uYXNjaW1lbnRvIjoiNi82LzIwMDUiLCJwYXNzd29yZCI6IkExU2QiLCJjb2RpZ29fcG9zdGFsIjoiNjU3NC05NTgiLCJkaXN0cml0byI6IkF2ZWlybyIsImNvbmNlbGhvIjoiQW5hZGlhIiwiYXJ0ZXNhbyI6dHJ1ZSwiYXJ0ZXNhb19kYWRvcyI6eyJkZXNjcmljYW8iOiJFdSBmYedvICdyb3VwYScuIiwiYXJ0aWdvcyI6W3sibm9tZSI6IidDYW1pc29sYSciLCJkZXNjcmljYW8iOiJVbWEgcGXnYSBkZSByb3VwYSBtdWl0byAnaW50ZXJlc3NhbnRlJy4ifSx7Im5vbWUiOiInQ2FzYWNvJyIsImRlc2NyaWNhbyI6IkVzdGEgY29pc2Eg6SBkZWZpbml0aXZhbWVudGUgYWxnby4ifV19fSwidGVzdGVAMTIzLmNvbSI6eyJub21lIjoiVGVzdGUiLCJkYXRhX25hc2NpbWVudG8iOiIyMDIzLTExLTI3IiwicGFzc3dvcmQiOiIxMjM0IiwiY29kaWdvX3Bvc3RhbCI6IjU0MzEtMjMyIiwiZGlzdHJpdG8iOiJBbW9uZ3VzIiwiY29uY2VsaG8iOiJBdmVpcm8iLCJhcnRlc2FvIjpmYWxzZX0sInRlc3RlMkAxMjMuY29tIjp7Im5vbWUiOiJUZXN0ZTIiLCJkYXRhX25hc2NpbWVudG8iOiIyMDIzLTEyLTAyIiwicGFzc3dvcmQiOiIxMjM0NSIsImNvZGlnb19wb3N0YWwiOiI0NTc5LTMxNiIsImRpc3RyaXRvIjoiQ29pbWJyYSIsImNvbmNlbGhvIjoiQ29pbWJyYSJ9LCJ0ZXN0ZTNAMTIzLmNvbSI6eyJhcnRlc2FvIjpmYWxzZSwiY29kaWdvX3Bvc3RhbCI6IjM2MTMtMzQyIiwiY29uY2VsaG8iOiJDb2ltYnJhIiwiZGF0YV9uYXNjaW1lbnRvIjoiMjAyMy0xMi0yNSIsImRpc3RyaXRvIjoiTGVpcmlhIiwibm9tZSI6IlRlc3RlMyIsInBhc3N3b3JkIjoiNTQzMjEifX0=
+{
+  "samuel.ramos.sgfr@gmail.com": {
+    "nome": "Samuel Ramos",
+    "data_nascimento": "16/3/2005",
+    "password": "1234",
+    "codigo_postal": "1234-567",
+    "distrito": "Aveiro",
+    "concelho": "Vagos",
+    "artesao": true,
+    "artesao_dados": {
+      "descricao": "Eu sou um artesão de elevada confiança.\nTodos os meus clientes ficam muito felizes com o meu trabalho.\n'Uau, muito bom.' - António Santos\n'Mid.' - Gonçalo Simões",
+      "artigos": [
+        {
+          "nome": "Camisola estilosa",
+          "descricao": "Uma camisola muito estilosa."
+        }
+      ]
+    }
+  },
+  "goncalosimoes511@gmail.com": {
+    "nome": "Gonçalo Simões",
+    "data_nascimento": "3/12/2005",
+    "password": "4321",
+    "codigo_postal": "7654-321",
+    "distrito": "Aveiro",
+    "concelho": "Vagos",
+    "artesao": false
+  },
+  "goncaloliveirasilva@gmail.com": {
+    "nome": "Gonçalo Silva",
+    "data_nascimento": "1/2/2004",
+    "password": "gsil",
+    "codigo_postal": "8124-120",
+    "distrito": "Viana do Castelo",
+    "concelho": "Ponte de Lima",
+    "artesao": false
+  },
+  "ap1mrfj@gmail.com": {
+    "nome": "António Santos",
+    "data_nascimento": "6/6/2005",
+    "password": "A1Sd",
+    "codigo_postal": "6574-958",
+    "distrito": "Aveiro",
+    "concelho": "Anadia",
+    "artesao": true,
+    "artesao_dados": {
+      "descricao": "Eu faço 'roupa'.",
+      "artigos": [
+        {
+          "nome": "'Camisola'",
+          "descricao": "Uma peça de roupa muito 'interessante'."
+        },
+        {
+          "nome": "'Casaco'",
+          "descricao": "Esta coisa é definitivamente algo."
+        }
+      ]
+    }
+  },
+  "teste@123.com": {
+    "nome": "Teste",
+    "data_nascimento": "2023-11-27",
+    "password": "1234",
+    "codigo_postal": "5431-232",
+    "distrito": "Amongus",
+    "concelho": "Aveiro",
+    "artesao": false
+  },
+  "teste2@123.com": {
+    "nome": "Teste2",
+    "data_nascimento": "2023-12-02",
+    "password": "12345",
+    "codigo_postal": "4579-316",
+    "distrito": "Coimbra",
+    "concelho": "Coimbra"
+  }
+}
