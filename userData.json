@@ -91,5 +91,14 @@
     "distrito": "Coimbra",
     "concelho": "Leiria",
     "artesao": false
+  },
+  "joaosilva@gmail.com": {
+    "nome": "João",
+    "data_nascimento": "2023-12-18",
+    "password": "jsilva",
+    "codigo_postal": "7654-789",
+    "distrito": "Áveiro",
+    "concelho": "Aveiro",
+    "artesao": false
   }
 }
