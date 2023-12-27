@@ -1,1 +1,86 @@
-{"samuel.ramos.sgfr@gmail.com":{"nome":"Samuel Ramos","data_nascimento":"16/3/2005","password":"1234","codigo_postal":"1234-567","distrito":"Aveiro","concelho":"Vagos","artesao":true,"artesao_dados":{"descricao":"Eu sou um artesão de elevada confiança.\nTodos os meus clientes ficam muito felizes com o meu trabalho.\n'Uau, muito bom.' - António Santos\n'Mid.' - Gonçalo Simões","artigos":[{"nome":"Camisola estilosa","descricao":"Uma camisola muito estilosa."}]}},"goncalosimoes511@gmail.com":{"nome":"Gonçalo Simões","data_nascimento":"3/12/2005","password":"4321","codigo_postal":"7654-321","distrito":"Aveiro","concelho":"Vagos","artesao":false},"goncaloliveirasilva@gmail.com":{"nome":"Gonçalo Silva","data_nascimento":"1/2/2004","password":"gsil","codigo_postal":"8124-120","distrito":"Viana do Castelo","concelho":"Ponte de Lima","artesao":false},"ap1mrfj@gmail.com":{"nome":"António Santos","data_nascimento":"6/6/2005","password":"A1Sd","codigo_postal":"6574-958","distrito":"Aveiro","concelho":"Anadia","artesao":true,"artesao_dados":{"descricao":"Eu faço 'roupa'.","artigos":[{"nome":"'Camisola'","descricao":"Uma peça de roupa muito 'interessante'."},{"nome":"'Casaco'","descricao":"Esta coisa é definitivamente algo."}]}},"teste@123.com":{"nome":"Teste","data_nascimento":"2023-11-27","password":"1234","codigo_postal":"5431-232","distrito":"Amongus","concelho":"Aveiro","artesao":false},"teste2@123.com":{"nome":"Teste2","data_nascimento":"2023-12-02","password":"12345","codigo_postal":"4579-316","distrito":"Coimbra","concelho":"Coimbra"},"teste3@123.com":{"artesao":false,"codigo_postal":"3613-342","concelho":"Coimbra","data_nascimento":"2023-12-25","distrito":"Leiria","nome":"Teste3","password":"54321"}}
+{
+  "samuel.ramos.sgfr@gmail.com": {
+    "nome": "Samuel Ramos",
+    "data_nascimento": "16/3/2005",
+    "password": "1234",
+    "codigo_postal": "1234-567",
+    "distrito": "Aveiro",
+    "concelho": "Vagos",
+    "artesao": true,
+    "artesao_dados": {
+      "descricao": "Eu sou um artesão de elevada confiança.\nTodos os meus clientes ficam muito felizes com o meu trabalho.\n'Uau, muito bom.' - António Santos\n'Mid.' - Gonçalo Simões",
+      "artigos": [
+        {
+          "nome": "Camisola estilosa",
+          "descricao": "Uma camisola muito estilosa."
+        }
+      ]
+    }
+  },
+  "goncalosimoes511@gmail.com": {
+    "nome": "Gonçalo Simões",
+    "data_nascimento": "3/12/2005",
+    "password": "4321",
+    "codigo_postal": "7654-321",
+    "distrito": "Aveiro",
+    "concelho": "Vagos",
+    "artesao": false
+  },
+  "goncaloliveirasilva@gmail.com": {
+    "nome": "Gonçalo Silva",
+    "data_nascimento": "1/2/2004",
+    "password": "gsil",
+    "codigo_postal": "8124-120",
+    "distrito": "Viana do Castelo",
+    "concelho": "Ponte de Lima",
+    "artesao": false
+  },
+  "ap1mrfj@gmail.com": {
+    "nome": "António Santos",
+    "data_nascimento": "6/6/2005",
+    "password": "A1Sd",
+    "codigo_postal": "6574-958",
+    "distrito": "Aveiro",
+    "concelho": "Anadia",
+    "artesao": true,
+    "artesao_dados": {
+      "descricao": "Eu faço 'roupa'.",
+      "artigos": [
+        {
+          "nome": "'Camisola'",
+          "descricao": "Uma peça de roupa muito 'interessante'."
+        },
+        {
+          "nome": "'Casaco'",
+          "descricao": "Esta coisa é definitivamente algo."
+        }
+      ]
+    }
+  },
+  "teste@123.com": {
+    "nome": "Teste",
+    "data_nascimento": "2023-11-27",
+    "password": "1234",
+    "codigo_postal": "5431-232",
+    "distrito": "Amongus",
+    "concelho": "Aveiro",
+    "artesao": false
+  },
+  "teste2@123.com": {
+    "nome": "Teste2",
+    "data_nascimento": "2023-12-02",
+    "password": "12345",
+    "codigo_postal": "4579-316",
+    "distrito": "Coimbra",
+    "concelho": "Coimbra"
+  },
+  "teste3@123.com": {
+    "artesao": false,
+    "codigo_postal": "3613-342",
+    "concelho": "Coimbra",
+    "data_nascimento": "2023-12-25",
+    "distrito": "Leiria",
+    "nome": "Teste3",
+    "password": "54321"
+  }
+}
