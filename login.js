@@ -1,8 +1,31 @@
 const githubRepoUrl = 'https://raw.githubusercontent.com/Apmds/Apmds.github.io/main/userData.json';
 const apiUrl = `https://api.github.com/repos/Apmds/Apmds.github.io/contents/userData.json`;
+const token_encrypted = 'jks_tfgteUzOqxYeUMgdt6TBAQQOALaX3r3bO1cK';
+const shiftAmount = 3;
+const token = caesarCipherDecrypt(token_encrypted, shiftAmount)
+
 
 var user_logins = {}
 
+function caesarCipherEncrypt(text, shift) {
+    return text
+        .split('')
+        .map(char => {
+            if (char.match(/[a-z]/i)) {
+                const code = char.charCodeAt(0);
+                const isUpperCase = char === char.toUpperCase();
+                const shiftAmount = (code - (isUpperCase ? 65 : 97) + shift) % 26;
+                const shiftedCode = (shiftAmount + 26) % 26 + (isUpperCase ? 65 : 97);
+                return String.fromCharCode(shiftedCode);
+            }
+        return char;
+    })
+    .join('');
+}
+  
+function caesarCipherDecrypt(text, shift) {
+    return caesarCipherEncrypt(text, -shift);
+}
 
 fetch(apiUrl)
     .then(response => {
