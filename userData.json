@@ -65,5 +65,40 @@
     "distrito": "Amongus",
     "concelho": "Aveiro",
     "artesao": false
+  },
+  "teste2@123.com": {
+    "nome": "Teste2",
+    "data_nascimento": "2023-12-02",
+    "password": "12345",
+    "codigo_postal": "4579-316",
+    "distrito": "Coimbra",
+    "concelho": "Coimbra"
+  },
+  "teste3@123.com": {
+    "artesao": false,
+    "codigo_postal": "3613-342",
+    "concelho": "Coimbra",
+    "data_nascimento": "2023-12-25",
+    "distrito": "Leiria",
+    "nome": "Teste3",
+    "password": "54321"
+  },
+  "teste4@123.com": {
+    "nome": "Teste4",
+    "data_nascimento": "2023-12-25",
+    "password": "teste",
+    "codigo_postal": "7654-789",
+    "distrito": "Coimbra",
+    "concelho": "Leiria",
+    "artesao": false
+  },
+  "joaosilva@gmail.com": {
+    "nome": "João",
+    "data_nascimento": "2023-12-18",
+    "password": "jsilva",
+    "codigo_postal": "7654-789",
+    "distrito": "Áveiro",
+    "concelho": "Aveiro",
+    "artesao": false
   }
 }
