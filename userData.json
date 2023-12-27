@@ -8,7 +8,7 @@
     "concelho": "Vagos",
     "artesao": true,
     "artesao_dados": {
-      "descricao": "Eu sou um artes√£o de elevada confian√ßa.\nTodos os meus clientes ficam muito felizes com o meu trabalho.\n'Uau, muito bom.' - Ant√≥nio Santos\n'Mid.' - Gon√ßalo Sim√µes",
+      "descricao": "Eu sou um artes„o de elevada confianÁa.\nTodos os meus clientes ficam muito felizes com o meu trabalho.\n'Uau, muito bom.' - AntÛnio Santos\n'Mid.' - GonÁalo Simıes",
       "artigos": [
         {
           "nome": "Camisola estilosa",
@@ -18,7 +18,7 @@
     }
   },
   "goncalosimoes511@gmail.com": {
-    "nome": "Gon√ßalo Sim√µes",
+    "nome": "GonÁalo Simıes",
     "data_nascimento": "3/12/2005",
     "password": "4321",
     "codigo_postal": "7654-321",
@@ -27,7 +27,7 @@
     "artesao": false
   },
   "goncaloliveirasilva@gmail.com": {
-    "nome": "Gon√ßalo Silva",
+    "nome": "GonÁalo Silva",
     "data_nascimento": "1/2/2004",
     "password": "gsil",
     "codigo_postal": "8124-120",
@@ -36,7 +36,7 @@
     "artesao": false
   },
   "ap1mrfj@gmail.com": {
-    "nome": "Ant√≥nio Santos",
+    "nome": "AntÛnio Santos",
     "data_nascimento": "6/6/2005",
     "password": "A1Sd",
     "codigo_postal": "6574-958",
@@ -44,15 +44,15 @@
     "concelho": "Anadia",
     "artesao": true,
     "artesao_dados": {
-      "descricao": "Eu fa√ßo 'roupa'.",
+      "descricao": "Eu faÁo 'roupa'.",
       "artigos": [
         {
           "nome": "'Camisola'",
-          "descricao": "Uma pe√ßa de roupa muito 'interessante'."
+          "descricao": "Uma peÁa de roupa muito 'interessante'."
         },
         {
           "nome": "'Casaco'",
-          "descricao": "Esta coisa √© definitivamente algo."
+          "descricao": "Esta coisa È definitivamente algo."
         }
       ]
     }
@@ -65,5 +65,13 @@
     "distrito": "Amongus",
     "concelho": "Aveiro",
     "artesao": false
+  },
+  "teste2@123.com": {
+    "nome": "Teste2",
+    "data_nascimento": "2023-12-02",
+    "password": "12345",
+    "codigo_postal": "4579-316",
+    "distrito": "Coimbra",
+    "concelho": "Coimbra"
   }
 }
